@@ -12,6 +12,7 @@ export function useFetch() {
         const data = await res.json();
         setProducts(data);
       } catch (error) {
+        console.log(error);
         setError(error.message);
       } finally {
         setLoading(false);

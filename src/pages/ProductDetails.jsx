@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 import { BeatLoader } from "react-spinners";
+import "./ProductDetails.css";
 
 export default function ProductDetails() {
   const { products, loading } = useFetch();
@@ -22,9 +23,11 @@ export default function ProductDetails() {
 
   return (
     <div>
-      <img src={product.image} alt={product.name} />
-      <h2>{product.title}</h2>
-      <Link to="/products">Back to products</Link>
+      <img src={product.image} alt={product.name} className="product-img" />
+      <h2 className="product-title">{product.title}</h2>
+      <Link to="/products" className="details-back-link">
+        Back to products
+      </Link>
     </div>
   );
 }

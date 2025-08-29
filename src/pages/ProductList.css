@@ -1,0 +1,29 @@
+.products-title {
+  font-size: 40px;
+  color: #273c75;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.products-link {
+  text-align: center;
+  text-decoration: none;
+  color: #5c84bd;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.products-img {
+  display: grid;
+  gap: 20px;
+}
+
+.products-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0f3950;
+}

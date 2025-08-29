@@ -1,0 +1,25 @@
+.details-back-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #5c84bd;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.product-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #446797;
+}
+
+.product-img {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

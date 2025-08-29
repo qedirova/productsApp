@@ -2,6 +2,7 @@ import React from "react";
 import { useFetch } from "../hooks/useFetch";
 import { BeatLoader } from "react-spinners";
 import { Link } from "react-router-dom";
+import "./ProductList.css";
 
 export default function ProductList() {
   const { products, loading, error } = useFetch();
@@ -24,13 +25,13 @@ export default function ProductList() {
 
   return (
     <div>
-      <h2>Our Products</h2>
+      <h2 className="products-title">Our Products</h2>
       {products.map((x) => (
-        <Link to={`/products/${x.id}`} key={x.id}>
-          <img src={x.image} alt={x.name} />
+        <Link to={`/products/${x.id}`} key={x.id} className="products-link">
+          <img src={x.image} alt={x.name} className="products-img" />
           <span>{x.title}</span>
           <div>
-            <span>${x.price}</span>
+            <span className="products-price">${x.price}</span>
             <span>{}</span>
           </div>
         </Link>

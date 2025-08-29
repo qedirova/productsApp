@@ -1,7 +1,18 @@
-.details-back-link {
+.product {
   display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
+}
+
+.product-text {
+  max-width: 500px;
+}
+
+.details-back-link {
   text-decoration: none;
   color: #5c84bd;
   font-size: 25px;
@@ -9,17 +20,10 @@
 }
 
 .product-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 25px;
   color: #446797;
 }
 
 .product-img {
   width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
